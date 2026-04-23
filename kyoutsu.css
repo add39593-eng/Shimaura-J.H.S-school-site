@@ -1,0 +1,65 @@
+/* ===== 全体 ===== */
+body {
+    margin: 0;
+    background: white; /* 外側 */
+    font-family: sans-serif;
+}
+
+/* ===== 本体（中央1200px＋左右の線） ===== */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* ===== ヘッダー ===== */
+header {
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ===== ヘッダー中身（ここが最重要） ===== */
+.header-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    padding-left: 30px;   /* ← 左余白 */
+    padding-right: 30px;  /* ← 右余白 */
+}
+
+/* ===== ロゴ ===== */
+.logo img {
+    height: 90px;
+    display: block;
+}
+
+/* ===== ナビ（右に寄せる） ===== */
+nav {
+    margin-left: auto;
+}
+
+/* メニュー */
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px 30px;
+}
